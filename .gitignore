@@ -12,6 +12,7 @@ log/
 # SSH - Ignora chaves, mantém config
 # ============================================
 ssh/**/.ssh/environment*
+ssh/**/.ssh/known_hosts*
 ssh/**/id_rsa
 ssh/**/id_rsa.pub
 ssh/**/id_ed25519
