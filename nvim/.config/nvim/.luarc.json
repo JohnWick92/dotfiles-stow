@@ -1,0 +1,8 @@
+{
+    "diagnostics.globals": [
+        "vue_ls_config"
+    ],
+    "diagnostics.disable": [
+        "missing-fields"
+    ]
+}

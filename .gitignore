@@ -1,0 +1,270 @@
+# ============================================
+# LOGS - Geral
+# ============================================
+*.log
+*.log.*
+logs/
+log/
+*.out
+*.err
+
+# ============================================
+# SSH - Ignora chaves, mantém config
+# ============================================
+ssh/**/.ssh/environment*
+ssh/**/id_rsa
+ssh/**/id_rsa.pub
+ssh/**/id_ed25519
+ssh/**/id_ed25519.pub
+ssh/**/id_dsa
+ssh/**/id_dsa.pub
+ssh/**/id_ecdsa
+ssh/**/id_ecdsa.pub
+ssh/**/known_hosts
+ssh/**/authorized_keys
+ssh/**/*.pem
+ssh/**/*.key
+ssh/**/*.crt
+ssh/**/*.csr
+ssh/**/*.p12
+ssh/**/*.pfx
+ssh/**/private/
+ssh/**/keys/
+ssh/**/*_key
+ssh/**/*_key.pub
+
+# Mantém config SSH
+!ssh/**/config
+!ssh/**/config.d/
+!ssh/**/config.d/*
+
+# ============================================
+# XPIPE
+# ============================================
+xpipe/.xpipe/cache/
+xpipe/.xpipe/logs/
+xpipe/.xpipe/lock
+xpipe/.xpipe/storage/
+xpipe/.xpipe/sync_file
+xpipe/.xpipe/workspaces.json
+xpipe/.xpipe/*.tmp
+xpipe/.xpipe/*.bak
+
+# Mantém configurações do XPipe
+!xpipe/.xpipe/settings/
+!xpipe/.xpipe/settings/*
+
+# ============================================
+# NVIM
+# ============================================
+nvim/.cache/
+nvim/.local/
+nvim/.config/nvim/plugin/
+nvim/.config/nvim/after/
+nvim/.config/nvim/lazy-lock.json
+nvim/.config/nvim/lazy/
+nvim/.config/nvim/session/
+nvim/.config/nvim/swap/
+nvim/.config/nvim/undo/
+nvim/.config/nvim/backup/
+nvim/.config/nvim/*.log
+nvim/.config/nvim/spell/
+*.swp
+*.swo
+*.swo?
+
+# ============================================
+# ZSH
+# ============================================
+zsh/.zsh_history
+zsh/.zcompdump*
+zsh/.zcache/
+zsh/.zsh_sessions/
+zsh/.zsh-update
+zsh/.zshrc.local
+zsh/*.zwc
+zsh/.zinit/
+zsh/.zplug/
+zsh/.antigen/
+zsh/*.log
+
+# ============================================
+# MISE (asdf/version manager)
+# ============================================
+mise/.local/
+mise/.cache/
+mise/.config/mise/
+mise/installs/
+mise/shims/
+mise/downloads/
+mise/*.log
+mise/.tool-versions.backup
+
+# ============================================
+# GIT
+# ============================================
+git/.gitconfig.local
+git/.gitignore.local
+git/.gitconfig.user
+git/*.local
+
+# ============================================
+# WEZTERM
+# ============================================
+wezterm/.wezterm-cache/
+wezterm/.wezterm.lua.local
+wezterm/*.log
+wezterm/.cache/
+wezterm/.config/wezterm/
+
+# ============================================
+# STARSHIP
+# ============================================
+starship/starship.toml.local
+starship/*.local
+starship/*.log
+starship/.cache/
+
+# ============================================
+# XCOMPOSE
+# ============================================
+xcompose/.XCompose.local
+xcompose/*.log
+xcompose/*.tmp
+xcompose/*.bak
+
+# ============================================
+# BASE_ARCH
+# ============================================
+base_arch.sh.local
+base_arch.log
+base_arch/*.log
+base_arch/*.tmp
+
+# ============================================
+# INSTALL.SH
+# ============================================
+install.sh.local
+install.log
+install/*.log
+install/*.tmp
+install/backup/
+
+# ============================================
+# ARQUIVOS SENSÍVEIS GERAIS
+# ============================================
+.env
+.env.*
+*.secret
+*.secrets
+.credentials
+*.credentials
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+*.cer
+*.der
+*.p7b
+*.p7c
+*.p8
+*.priv
+*.pub
+*.sec
+*.secure
+passwords.txt
+secrets/
+
+# ============================================
+# ARQUIVOS TEMPORÁRIOS E BACKUP
+# ============================================
+*~
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.temp
+*.orig
+*.rej
+.DS_Store
+Thumbs.db
+*.old
+*.new
+
+# ============================================
+# CACHE
+# ============================================
+.cache/
+*.cache
+*.pyc
+*.pyo
+__pycache__/
+*.class
+*.jar
+*.war
+*.ear
+
+# ============================================
+# STOW
+# ============================================
+.stow-local-ignore
+*/.stow-local-ignore
+~/.stow-local-ignore
+*.stow
+
+# ============================================
+# EDITORES
+# ============================================
+.vscode/
+.idea/
+*.sublime-*
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# ============================================
+# DEBUG
+# ============================================
+*.trace
+*.dump
+*.core
+*.hprof
+*.heap
+*.prof
+*.gcda
+*.gcno
+
+# ============================================
+# FERRAMENTAS DE VERSÃO
+# ============================================
+*.orig
+*.rej
+*.patch
+*.diff
+
+# ============================================
+# SISTEMA
+# ============================================
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+*.dll
+*.exe
+*.so
+*.dylib
+*.bin
+
+# ============================================
+# LOCAL CONFIGS - Mantém exemplos
+# ============================================
+*.local
+*.local.*
+*_local
+!*.local.example
+!*_local.example
