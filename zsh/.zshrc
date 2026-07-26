@@ -111,8 +111,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(~/.local/bin/mise activate zsh)"
 
-alias vpnup="nmcli connection up josue"
-alias vpndw="nmcli connection down josue"
+alias vpnup="nmcli connection up josue_safa"
+alias vpndw="nmcli connection down josue_safa"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/$USER/.local/share/mise/installs/terraform/1.15.7/terraform terraform
 
