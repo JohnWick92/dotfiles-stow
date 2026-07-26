@@ -1,10 +1,10 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-name = Josué Ferreira
+name = Josué De Oliveira Ferreira
   email = grumec92@gmail.com
 ; email = josue.ferreira@ipqm.mb
-signingKey = 32D73022A4B435DB
+signingKey = 8B8AE74DB63952EB
 
 [core]
     editor = nvim

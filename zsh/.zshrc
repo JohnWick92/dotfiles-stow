@@ -74,7 +74,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git composer laravel ssh-agent
+  git composer laravel gpg-agent
   zsh-autosuggestions podman
   docker mise rust kubectl
   dotenv zoxide starship kompose
@@ -115,3 +115,13 @@ alias vpnup="nmcli connection up josue"
 alias vpndw="nmcli connection down josue"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /home/$USER/.local/share/mise/installs/terraform/1.15.7/terraform terraform
+
+# Força o terminal a derrubar o agente SSH nativo antigo
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
+
+# Configura o terminal atual para as perguntas de senha do GPG (pinentry)
+export GPG_TTY=$(tty)
+gpg-connect-agent updatestartuptty /bye >/dev/null
