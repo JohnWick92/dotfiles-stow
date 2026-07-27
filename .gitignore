@@ -94,7 +94,6 @@ zsh/*.log
 # ============================================
 mise/.local/
 mise/.cache/
-mise/.config/mise/
 mise/installs/
 mise/shims/
 mise/downloads/
