@@ -4,8 +4,7 @@
 name = Josué De Oliveira Ferreira
   email = grumec92@gmail.com
 ; email = josue.ferreira@ipqm.mb
-signingKey = 8B8AE74DB63952EB
-
+signingKey = 83EBCCAF9D72E0EB
 [core]
     editor = nvim
     pager = delta

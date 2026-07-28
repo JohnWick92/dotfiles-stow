@@ -21,7 +21,7 @@ ssh/**/id_dsa
 ssh/**/id_dsa.pub
 ssh/**/id_ecdsa
 ssh/**/id_ecdsa.pub
-ssh/**/known_hosts
+ssh/.ssh/known_hosts
 ssh/**/authorized_keys
 ssh/**/*.pem
 ssh/**/*.key
