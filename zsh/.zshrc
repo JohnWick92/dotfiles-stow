@@ -125,3 +125,9 @@ fi
 # Configura o terminal atual para as perguntas de senha do GPG (pinentry)
 export GPG_TTY=$(tty)
 gpg-connect-agent updatestartuptty /bye >/dev/null
+# Load the edit-command-line function
+autoload -U edit-command-line
+zle -N edit-command-line
+
+# Bind it to Ctrl+X, Ctrl+E
+bindkey '^x^e' edit-command-line
