@@ -131,3 +131,4 @@ zle -N edit-command-line
 
 # Bind it to Ctrl+X, Ctrl+E
 bindkey '^x^e' edit-command-line
+alias lzp='lazypodman'
