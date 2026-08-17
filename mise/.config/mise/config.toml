@@ -1,5 +1,5 @@
 [tools]
-ansible = { version = "14.3.0", pipx_args = "--include-deps", uvx = "false" }
+ansible = { version = "14.3.1", pipx_args = "--include-deps", uvx = "false" }
 clojure = "latest"
 erlang = "29.0.5"
 go = "1.26.6"
@@ -7,7 +7,7 @@ java = "26.0.2"
 node = "26.7.0"
 php = "8.5.9"
 pipx = "1.16.7"
-pnpm = "11.21.0"
+pnpm = "11.22.0"
 rebar = { version = "3.27.0", asset_pattern = "rebar3" }
 ruby = "4.0.6"
 terraform = "1.15.8"
