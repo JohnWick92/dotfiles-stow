@@ -3,8 +3,7 @@
 cd /tmp && git clone https://aur.archlinux.org/yay-bin && cd yay-bin && makepkg -si
 
 yay -Syu --needed --noconfirm neovim clang ghostty-nightly-bin lazygit \
-  re2c postgresql-libs stow veracrypt git-delta exa gd bitwarden \
-  flatpak oniguruma zsh btop zoxide unzip starship mise ente-auth-bin
+  re2c postgresql-libs stow veracrypt git-delta exa gd bitwarden wl-clipboarc flatpak oniguruma zsh btop zoxide unzip starship mise ente-auth-bin
 
 if ! grep -q "GTK_IM_MODULE=cedilla" /etc/environment && ! grep -q "QT_IM_MODULE=cedilla" /etc/environment; then
   echo "GTK_IM_MODULE=cedilla
