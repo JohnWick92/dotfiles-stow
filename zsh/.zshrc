@@ -109,12 +109,12 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(~/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 alias vpnup="nmcli connection up josue_safa"
 alias vpndw="nmcli connection down josue_safa"
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /home/$USER/.local/share/mise/installs/terraform/1.15.7/terraform terraform
+complete -o nospace -C /home/$USER/.local/share/mise/installs/terraform/latest/terraform terraform
 
 # Força o terminal a derrubar o agente SSH nativo antigo
 unset SSH_AGENT_PID

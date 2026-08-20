@@ -10,6 +10,6 @@ pipx = "1.16.7"
 pnpm = "11.22.0"
 rebar = { version = "3.27.0", asset_pattern = "rebar3" }
 ruby = "4.0.6"
-terraform = "1.15.8"
+terraform = "latest"
 usage = "5.1.0"
 zig = "latest"

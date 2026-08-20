@@ -9,6 +9,15 @@ log/
 *.err
 
 # ============================================
+# GNUPG
+# ============================================
+gnupg/*
+!gnupg/.gnupg
+gnupg/.gnupg/*
+!gnupg/.gnupg/ssh-control
+!gnupg/.gnupg/gpg-agent.conf
+
+# ============================================
 # SSH - Ignora chaves, mantém config
 # ============================================
 ssh/**/.ssh/environment*
@@ -268,3 +277,4 @@ Thumbs.db
 *_local
 !*.local.example
 !*_local.example
+
