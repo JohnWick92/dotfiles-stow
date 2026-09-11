@@ -12,6 +12,7 @@ CUSTOM=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}
 [ ! -d "$CUSTOM/plugins/zsh-autosuggestions" ] && git clone https://github.com/zsh-users/zsh-autosuggestions.git "$CUSTOM/plugins/zsh-autosuggestions"
 
 # Apply ALL packages with Stow (using .dotfiles directory)
+rm -rf .zshrc
 cd ~/.dotfiles || exit
 stow --restow */ # The asterisk targets every folder as a package
 
